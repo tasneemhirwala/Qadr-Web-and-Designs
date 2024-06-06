@@ -9,6 +9,7 @@
 body {
   font-family: "Roboto", sans-serif;
 }
+
 /* Navbar */
 .navbar {
   background-color: #f8bbd0; /* Navbar background color */
@@ -79,6 +80,7 @@ body {
 .navbar-nav .nav-link:hover {
   transform: scale(1.05);
 }
+
 /* Hero section styles */
 .hero {
   margin-top: 70px;
@@ -96,7 +98,8 @@ body {
 }
 
 .hero-content h1 {
-  font-size: 3rem;
+  text-align: center;
+  font-size: 9rem;
   margin-bottom: 20px;
 }
 
@@ -120,21 +123,205 @@ body {
 .cta-button:hover {
   background-color: #e57706;
 }
-@media (max-width: 992px){
+
+@media (max-width: 992px) {
   .hero-content h1 {
+    font-weight: 800;
     font-family: "Lato", sans-serif;
-    font-size: 28px;
+    font-size: 40px;
     margin-bottom: 20px;
+  }
+  .hero-content p {
+    font-size: 25px;
+    font-weight: 600;
+  }
 }
-.hero-content p{
-  font-size: 25px;
-  font-weight: 600;
-}
-}
-/* Services section styles */
-#services {
+#portfolio,
+#testimonials,
+#contact {
+  margin-top: 150px;
   background-color: #f9f9f9;
   padding: 100px 0;
+}
+
+#services h2,
+#portfolio h2,
+#testimonials h2,
+#contact h2 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 55px;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #f5eccf;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.5),
+    0 0 10px rgba(173, 216, 230, 0.7), 0 0 15px rgba(135, 206, 250, 0.9),
+    0 0 20px rgba(70, 130, 180, 1);
+  animation: color 1.5s ease-in infinite;
+}
+
+@keyframes color {
+  0%,
+  10% {
+    color: #f5eccf;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5),
+      0 0 10px rgba(173, 216, 230, 0.7), 0 0 15px rgba(135, 206, 250, 0.9),
+      0 0 20px rgba(70, 130, 180, 1);
+  }
+  11%,
+  20% {
+    color: #f5eccf;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5),
+      0 0 10px rgba(173, 216, 230, 0.7), 0 0 15px rgba(135, 206, 250, 0.9),
+      0 0 20px rgba(100, 149, 237, 1);
+  }
+  21%,
+  30% {
+    color: #f5eccf;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5),
+      0 0 10px rgba(173, 216, 230, 0.7), 0 0 15px rgba(135, 206, 250, 0.9),
+      0 0 20px rgba(123, 104, 238, 1);
+  }
+  31%,
+  40% {
+    color: #f5eccf;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5),
+      0 0 10px rgba(173, 216, 230, 0.7), 0 0 15px rgba(135, 206, 250, 0.9),
+      0 0 20px rgba(72, 61, 139, 1);
+  }
+  41%,
+  50% {
+    color: #f5eccf;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5),
+      0 0 10px rgba(173, 216, 230, 0.7), 0 0 15px rgba(135, 206, 250, 0.9),
+      0 0 20px rgba(70, 130, 180, 1);
+  }
+  51%,
+  60% {
+    color: #f5eccf;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5),
+      0 0 10px rgba(173, 216, 230, 0.7), 0 0 15px rgba(135, 206, 250, 0.9),
+      0 0 20px rgba(123, 104, 238, 1);
+  }
+  61%,
+  100% {
+    color: #f5eccf;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5),
+      0 0 10px rgba(173, 216, 230, 0.7), 0 0 15px rgba(135, 206, 250, 0.9),
+      0 0 20px rgba(70, 130, 180, 1);
+  }
+}
+
+/* Funky text shadow effect */
+@keyframes flickerAnimation {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#services h2,
+#portfolio h2,
+#testimonials h2,
+#contact h2 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 55px;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #F5ECCF;
+  text-shadow: 
+    0 0 5px #fff,
+    0 0 10px #f0c,
+    0 0 15px #f0c,
+    0 0 20px #ff00ff,
+    0 0 25px #ff00ff,
+    0 0 30px #ff00ff,
+    0 0 35px #ff00ff;
+  animation: colorChange 3s ease-in-out infinite alternate;
+}
+
+@keyframes colorChange {
+  0% {
+    text-shadow: 
+      0 0 5px #fff,
+      0 0 10px #f0c,
+      0 0 15px #f0c,
+      0 0 20px #ff00ff,
+      0 0 25px #ff00ff,
+      0 0 30px #ff00ff,
+      0 0 35px #ff00ff;
+  }
+  50% {
+    text-shadow: 
+      0 0 5px #fff,
+      0 0 10px #00f,
+      0 0 15px #00f,
+      0 0 20px #00f,
+      0 0 25px #00f,
+      0 0 30px #00f,
+      0 0 35px #00f;
+  }
+  100% {
+    text-shadow: 
+      0 0 5px #fff,
+      0 0 10px #0f0,
+      0 0 15px #0f0,
+      0 0 20px #0f0,
+      0 0 25px #0f0,
+      0 0 30px #0f0,
+      0 0 35px #0f0;
+  }
+}
+
+/* Funky text shadow effect */
+@keyframes flickerAnimation {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#services h2,
+#portfolio h2,
+#testimonials h2,
+#contact h2 {
+  animation: flickerAnimation 2s infinite;
+}
+
+
+#services {
+  margin-top: 40px;
+  background-color: #f9f9f9;
+  padding: 100px 0;
+}
+
+#services h2 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 55px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 992px) {
+  #services {
+    margin-top: -20px;
+  }
+
+  #services h2 {
+    font-size: 38.5px;
+  }
 }
 
 .service-cards {
@@ -146,16 +333,44 @@ body {
 }
 
 .service-card {
-  background-color: #fff;
   padding: 40px;
   border-radius: 10px;
   text-align: center;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease,
+    background-color 0.3s ease;
 }
 
-.service-card:hover {
+/* Default slight background colors */
+.service-card-1 {
+  background-color: #ffe6cc; /* Slight color indicating future hover color */
+}
+
+.service-card-2 {
+  background-color: #e6f7ff; /* Slight color indicating future hover color */
+}
+
+.service-card-3 {
+  background-color: #e6ffe6; /* Slight color indicating future hover color */
+}
+
+/* Hover effects with different background colors */
+.service-card-1:hover {
   transform: translateY(-10px);
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.2);
+  background-color: #ff8800; /* Change to the desired background color */
+}
+
+.service-card-2:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.2);
+  background-color: #00bfff; /* Change to the desired background color */
+}
+
+.service-card-3:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.2);
+  background-color: #00ff7f; /* Change to the desired background color */
 }
 
 .service-card i {
